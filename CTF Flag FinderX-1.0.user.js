@@ -15,6 +15,7 @@
         { name: "CTF Flag", regex: /\b(?:ctfshow|dasctf|flag|CnHongKe)\s*\{[^}]*\}/gi },
         { name: "FLAG", regex: /FLAG\s*[:=]\s*[A-Za-z0-9_\-{}]+/gi },
         { name: "UUID", regex: /\b[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}\b/gi },
+        { name: "Console Log", regex: /console\.log\s*\(\s*(['"`])([\s\S]*?)\1\s*\)/gi },
         { name: "字符串", regex: /[A-Za-z0-9+/]{20,}={0,2}/g },
         { name: "花括号", regex: /(?<=\{)[^}]+(?=\})/g},
     ];
